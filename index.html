@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Evernote</title>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="notes.js"></script>
+    <script type="text/javascript" src="adapter.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <style>
+      input{
+        /*border: 2px solid white;
+        min-width: 100%;*/
+      }
+      @import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+      .title-area{
+        min-width: 100%;
+        min-height: 10vh;
+        border: 2px solid white;
+        overflow: hidden;
+        font-family: 'Raleway', sans-serif;
+        font-size: 2em;
+        font-weight: lighter;
+        display: inline-block;
+        outline: none;
+      },
+
+      .body-area{
+        min-width: 100%;
+        min-height: 80vh;
+        border: 2px solid white;
+        overflow: hidden;
+        display: inline-block;
+      },
+
+      input:focus,
+      select:focus,
+      textarea:focus,
+      button:focus {
+          outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <nav class="navbar navbar-light bg-faded">
+      <a class="navbar-brand user-class" href="#"></a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+
+
+
+    <div id="container" class="container float-left col-md-3" style="background-color: #ecf0f1; max-height:100vh; overflow: scroll; margin:none;" >
+
+
+      <div class="user-div"> </div>
+      <p id="new-note"><i class="fa fa-plus-circle" style="font-size: 32px;" aria-hidden="true"></i></p>
+
+
+      <div id="note-list" class="float-left d-inline-block">
+      </div>
+
+    </div> <!-- end container -->
+
+    <div class="container col-md-9 d-inline-block" style="padding:none; margin:none;">
+      <div id="note-panel" style="padding:none; margin:none; overflow:hidden;">
+      </div>
+    </div>
+
+    </body>
+</html>
